@@ -11,11 +11,9 @@
 \numberofauthors{2}
 
 \author{
-
 \alignauthor Kasturi Rangan Raghavan, Supriyo Chakraborty, Mani Srivastava\\
 	\affaddr{University of California, Los Angeles}\\
 	\email{\{kasturir,supriyo,mani\}@ucla.edu}
-
 \alignauthor Harris Teague\\
 	\affaddr{Qualcomm Inc.}\\
 	\email{hteague@qualcomm.com}
@@ -29,7 +27,7 @@ Perturbation and Synthesis of Sensor Data Streams}
 \maketitle
 
 \begin{abstract}
-Smart phones with increased computation and sensing capabilities have spurred the growth of a new generation of context-aware apps. These apps often make judicious use of the readily-available sensor data to infer users' personal context but most do provide some useful service in return. However, sharing sensor data with apps leaves room for abuse; a malicious app can extract information that is sensitive and considered private by the user. Current approaches to mitigate the privacy concerns rely on simple user-specified policies that consist of static rules and are limited to binary access control. These rules are often conservative and lead to a sharp decline in application utility. In this paper we aim to  address the above challenge of balancing user privacy and application utility. To this end, we present \textsc{Override}: a mobile privacy framework that empowers users to control the sensor data being delivered to apps. It does so by providing apps access to perturbed or even synthetic sensor data streams. We discuss the key architectural elements of \textsc{Override} and its prototype implementation on the Android platform. We highlight its ability to give users increased transparency and control over shared sensor data, and then discuss its other secondary benefits.
+Smart phones with increased computation and sensing capabilities have spurred the growth of context-aware apps. Apps have direct access to raw sensor data streams, and can use them to infer a user's personal context. Although an app may provide a useful advertised service in return, the sharing of raw sensor data allows a malicious app to extract other sensitive information. Something that is considered private by the user. Current approaches to mitigate such privacy concerns rely on simple user-specified policies consisting of static rules and amounts to all-or-nothing access to sensor data. Such rules are conservative and contribute to a sharp decline in an app's usefulness. In this paper we address the challenge of balancing user privacy and application utility. To this end, we present \textsc{Override}: a mobile privacy framework that empowers users to specify context-driven rules to control the sensor data delivered to an app. We provide fine-grained control mechanisms including perturbation or even synthesis of sensor data streams. We discuss the architecture of \textsc{Override} and describe a prototype implementation on the Android platform. We highlight the framework's ability to provide users with increased transparency and control over shared sensor data, and also mention potential secondary benefits.
 \end{abstract}
 
 \section{Introduction}
